@@ -1,0 +1,99 @@
+< !-- font awesome Kit -->
+<script src="https://kit.fontawesome.com/bd130a32d7.js"></script>
+< !-- adobe font-kit -->
+<script>
+  (function(d) {
+    var config = {
+        kitId: "mhk2hns",
+        scriptTimeout: 3000,
+        async: true
+      },
+      h = d.documentElement,
+      t = setTimeout(
+        function() {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        },
+
+        config.scriptTimeout
+      ),
+      tk = d.createElement("script"),
+      f = false,
+      s = d.getElementsByTagName("script")[0],
+      a;
+    h.className += " wf-loading";
+    tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function() {
+      a = this.readyState;
+      if (f || (a && a != "complete" && a != "loaded")) return;
+      f = true;
+      clearTimeout(t);
+      try {
+        Typekit.load(config);
+      } catch (e) {}
+    };
+    s.parentNode.insertBefore(tk, s);
+  })(document);
+</script>
+< !-- button styles -->
+<style>
+  .btn-flat {
+    color: #484848;
+    display: inline-block;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    background: #eaeef1;
+    text-decoration: none;
+    margin: 1em;
+    border-top-right-radius: 0.5em;
+  }
+
+  .btn-flat-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+  }
+
+  .btn-flat-icon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: 0.3s;
+  }
+
+  .btn-flat-text {
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    font-family: a-otf-ud-shin-maru-go-pr6n, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .btn-flat-icon-shaza {
+    background: #1da1f3;
+  }
+
+  .btn-flat-icon-qua {
+    background: #3b75d4;
+  }
+
+  .btn-flat-icon-team {
+    background: #7ece46;
+  }
+
+  .btn-flat-icon-fin {
+    background: #fd7171;
+  }
+
+  .btn-flat:hover .btn-flat-icon i {
+    -webkit-transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+</style>
